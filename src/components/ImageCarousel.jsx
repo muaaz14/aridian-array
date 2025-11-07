@@ -11,35 +11,8 @@ const ImageCarousel = () => {
     image0, image1, image2, image3, image4
   ];
 
-  // Double the images array to create a seamless loop
-  const duplicatedImages = [...images, ...images];
-
-  useEffect(() => {
-    const scrollContainer = document.querySelector('.carousel-track');
-    if (!scrollContainer) return;
-
-    // Reset position when reaching the end
-    const handleScroll = () => {
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
-      }
-    };
-
-    let scrollInterval = setInterval(() => {
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
-      } else {
-        scrollContainer.scrollLeft += 1; // Adjust speed by changing this value
-      }
-    }, 30); // Adjust interval for smoother/faster scrolling
-
-    scrollContainer.addEventListener('scroll', handleScroll);
-
-    return () => {
-      clearInterval(scrollInterval);
-      scrollContainer?.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // Double the images for seamless loop
+  const duplicatedImages = [...images, ...images, ...images];
 
   return (
     <div className="carousel-container">

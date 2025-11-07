@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import ImageCarousel from './components/ImageCarousel'
+import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({
@@ -30,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    
       <div className="main">
         <div className="card">
           <img src="/src/assets/aass-logo.png" className="logo" alt="Logo" />
@@ -56,12 +57,26 @@ function App() {
               <span className="countdown-label">SECS</span>
             </div>
           </div>
+          <div className="social-media">
+            <a href="https://www.linkedin.com/company/aridian-array-software-society/" target="_blank" rel="noopener noreferrer" className="icon-container">
+              <FaLinkedin className="social-icon" />
+            </a>
+            <a href="https://instagram.com/aridianarray" target="_blank" rel="noopener noreferrer" className="icon-container">
+              <FaInstagram className="social-icon" />
+            </a>
+            <a href="https://facebook.com/aridianarray" target="_blank" rel="noopener noreferrer" className="icon-container">
+              <FaFacebook className="social-icon" />
+            </a>
+            <a href="https://wa.me/+923255214561" target="_blank" rel="noopener noreferrer" className="icon-container">
+              <FaWhatsapp className="social-icon" />
+            </a>
+          </div>
         </div>
         <div className="carousel-wrapper">
           <ImageCarousel />
         </div>
       </div>
-    </>
+    
   )
 }
 
