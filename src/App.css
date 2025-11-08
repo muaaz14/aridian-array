@@ -5,8 +5,8 @@
 }
 
 .logo {
-  height: 160px;
-  width: 160px;
+  height: 120px;
+  width: 120px;
   align-self: middle;
   will-change: filter;
   transition: filter 300ms;

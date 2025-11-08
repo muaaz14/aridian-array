@@ -34,7 +34,7 @@ function App() {
     
       <div className="main">
         <div className="card">
-          <img src="/src/assets/aass-logo.png" className="logo" alt="Logo" />
+          <img src="/src/assets/aass-logo.svg" className="logo" alt="Logo" />
           <h2>We are Coming Soon</h2>
           <div className="countdown">
             <div className="countdown-item">
