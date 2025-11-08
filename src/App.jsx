@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import ImageCarousel from './components/ImageCarousel'
+import logo from '/src/assets/logo-new.png'
 import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
     
       <div className="main">
         <div className="card">
-          <img src="/src/assets/aass-logo.png" className="logo" alt="Logo" />
+          <img src={logo} className="logo" alt="Logo" />
           <h2>We are Launching Soon</h2>
           <p>A new chapter begins soon. Watch this space for the reveal; it’ll be worth the countdown.</p>
           <div className="countdown">
