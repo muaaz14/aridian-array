@@ -12,7 +12,7 @@ const ImageCarousel = () => {
   ];
 
   // Double the images for seamless loop
-  const duplicatedImages = [...images, ...images, ...images];
+  const duplicatedImages = [...images, ...images, ...images, ...images, ...images];
 
   return (
     <div className="carousel-container">

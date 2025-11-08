@@ -35,7 +35,8 @@ function App() {
       <div className="main">
         <div className="card">
           <img src="/src/assets/aass-logo.png" className="logo" alt="Logo" />
-          <h2>We are Coming Soon</h2>
+          <h2>We are Launching Soon</h2>
+          <p>A new chapter begins soon. Watch this space for the reveal; it’ll be worth the countdown.</p>
           <div className="countdown">
             <div className="countdown-item">
               <span className="countdown-number">{timeLeft.days}</span>
@@ -71,6 +72,9 @@ function App() {
               <FaWhatsapp className="social-icon" />
             </a>
           </div>
+        </div>
+        <div className="carousel-wrapper carousel-wrapper-2 reverse">
+          <ImageCarousel />
         </div>
         <div className="carousel-wrapper">
           <ImageCarousel />

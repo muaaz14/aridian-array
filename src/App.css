@@ -5,14 +5,14 @@
 }
 
 .logo {
-  height: 120px;
-  width: 120px;
+  height: 40px;
+  /* width: 120px; */
   align-self: middle;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cff60);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -84,7 +84,8 @@
 
 h2 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .carousel-wrapper {
@@ -94,11 +95,23 @@ h2 {
   margin: 20px 0px;
 }
 
+.carousel-wrapper-2{
+  display: block;
+  margin: 0;
+}
+
 .countdown {
   display: flex;
   gap: 1rem;
+  margin: 1em 0;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .carousel-wrapper-2 {
+    display: block;
+  }
 }
 
 .countdown-item {
@@ -117,7 +130,7 @@ h2 {
 }
 
 .countdown-number {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   color: #555;
 }
@@ -129,6 +142,32 @@ h2 {
   text-transform: uppercase;
 }
 
-.read-the-docs {
-  color: #888;
+
+
+
+/* Responsive adjustments */
+
+
+
+
+@media (max-width: 600px) {
+
+  .card {
+    gap: 48px;
+    padding: 16px 0;
+  }
+  .carousel-wrapper {
+    margin: 16px 0px;
+  }
+  .carousel-wrapper-2 {
+    display: block;
+    margin: 0;
+  }
+  .countdown {
+    display: none;
+  }
+
+  .logo {
+    height: 48px;
+  }
 }
